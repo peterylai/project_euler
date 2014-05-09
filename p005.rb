@@ -17,9 +17,6 @@ lcm_prime_factorization = Hash.new(0)
   end
 end
 
-lcm = 1
-lcm_prime_factorization.each do |factor, power|
-  lcm = lcm * factor**power
-end
+lcm = lcm_prime_factorization.reduce(1) { |product, (factor, power)| product * factor**power}
 
-puts lcm
+puts "The smallest positive number that is evenly divisible by all of the numbers from 1 to 20 is #{lcm}"

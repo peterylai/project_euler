@@ -11,5 +11,5 @@ def sum_for_two_multiples(max, first_multiple, second_multiple)
     return sum_for_one_multiple(max, first_multiple) + sum_for_one_multiple(max, second_multiple) - sum_for_one_multiple(max, first_multiple * second_multiple)
 end
 
-puts "The sum of all multiples of "+first_multiple.to_s+" and "+second_multiple.to_s
-puts "That are below the number "+max.to_s+" is : "+sum_for_two_multiples(max, first_multiple, second_multiple).to_s
+puts "The sum of all multiples of #{first_multiple} and #{second_multiple}"
+puts "That are below the number #{max} is : #{sum_for_two_multiples(max, first_multiple, second_multiple)}"
