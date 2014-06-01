@@ -1,5 +1,3 @@
-require 'pry'
-
 def abundant?(number)
   sum = 0
   (number/2).downto(1).each do |divisor| 
